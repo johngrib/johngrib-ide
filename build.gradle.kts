@@ -11,6 +11,11 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation("org.msgpack", "jackson-dataformat-msgpack", "0.9.6")
+    implementation("com.fasterxml.jackson.module", "jackson-module-kotlin", "2.15.2")
+}
+
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
