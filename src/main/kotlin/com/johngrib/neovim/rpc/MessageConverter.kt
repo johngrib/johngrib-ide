@@ -11,7 +11,7 @@ import kotlin.reflect.full.memberFunctions
 /**
  * Convert [Message] to specific classes. See [MessageConverterFun] for details.
  */
-class MessageConverter {
+object MessageConverter {
     private val funMap = ConcurrentHashMap<KClass<*>, (Message) -> Any>()
 
     fun registerConverterFun(clazz: KClass<*>) {
